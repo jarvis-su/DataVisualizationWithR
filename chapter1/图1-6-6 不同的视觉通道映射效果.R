@@ -2,7 +2,7 @@
 library(ggplot2)
 
 
-df<-read.csv("Facet_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/Facet_Data.csv", header = TRUE)
 
 p1<-ggplot(df, aes(x=SOD,y=tau,size=age)) + 
   geom_point(shape=21,color="black",fill="#336A97",stroke=0.25)

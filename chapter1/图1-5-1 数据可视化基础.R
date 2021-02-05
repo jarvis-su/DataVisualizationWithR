@@ -1,7 +1,8 @@
 #EasyCharts团队出品，
 #如有问题修正与深入学习，可联系微信：EasyCharts
 
-df<-read.csv("./data/Facet_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/Facet_Data.csv", header = TRUE)
+
 
 #-------------------------base----------------------------
 
