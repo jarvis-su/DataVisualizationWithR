@@ -10,7 +10,7 @@ df$family<-rep(c("sans", "times",  "mono"),each=4)
 df$label<-paste(df$family,"\n ",df$fontface)
 
 
-#CairoPDF(file="×ÖÌåÍ¼.pdf",width=4.67,height=4.36)
+#CairoPDF(file="å­—ä½“å›¾.pdf",width=4.67,height=4.36)
 #showtext.begin()
 
 ggplot(df, aes(x, y)) +
