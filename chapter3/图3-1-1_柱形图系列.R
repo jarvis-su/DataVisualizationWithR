@@ -23,7 +23,7 @@ ggplot(data=mydata,aes(x=Cut,y=Price))+
 
 #---------------------------双数剧系列柱形图----------------------------------------------------
 library(reshape2)
-mydata<-read.csv("MultiColumn_Data.csv",check.names=FALSE,
+mydata<-read.csv("chapter3/data/MultiColumn_Data.csv",check.names=FALSE,
                  sep=",",na.strings="NA",
                  stringsAsFactors=FALSE)
 
@@ -63,7 +63,7 @@ ggplot(data=mydata,aes(variable,value,fill=Clarity))+
 
 #------------------------------百分比堆积柱形图-------------------------------------------------------
 
-mydata<-read.csv("StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 mydata<-melt(mydata,id.vars='Clarity')
 

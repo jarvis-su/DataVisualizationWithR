@@ -24,7 +24,7 @@ ggplot(data=mydata,aes(Cut,Price))+
 
 #---------------------------双数剧系列柱形图----------------------------------------------------
 library(reshape2)
-mydata<-read.csv("MultiColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/MultiColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 mydata$Catergory<- factor(mydata$Catergory, levels = mydata$Catergory[order(mydata$X1996,decreasing = TRUE)])
 
@@ -43,7 +43,7 @@ ggplot(data=mydata,aes(Catergory,value,fill=variable))+
   )
 
 #-------------------------------堆积柱形图-------------------------------------------------------
-mydata<-read.csv("StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 sum<-sort(rowSums(mydata[,2:ncol(mydata)]),index.return=TRUE)
 colsum<-sort(colSums(mydata[,2:ncol(mydata)]),index.return=TRUE,decreasing = TRUE)
@@ -67,7 +67,7 @@ ggplot(data=mydata,aes(variable,value,fill=Clarity))+
 
 #------------------------------百分比堆积柱形图-------------------------------------------------------
 
-mydata<-read.csv("StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/StackedColumn_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 Per<-(as.matrix(mydata[5,2:ncol(mydata)])) / t(as.matrix(colSums(mydata[,2:ncol(mydata)]))) 
 
 Ideal<-sort(as.numeric(Per),index.return=TRUE,decreasing = TRUE) 
