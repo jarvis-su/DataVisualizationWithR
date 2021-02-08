@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(ggplot2) # load ggplot2
 # setting seed for random numbers
 set.seed(1111)
