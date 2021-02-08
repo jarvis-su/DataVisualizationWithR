@@ -3,7 +3,7 @@
 
 library(ggplot2)
 
-df<-read.csv("PolarBar_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/PolarBar_Data.csv", header = TRUE)
 
 ggplot(df,aes(Date,Value))+
   geom_bar(stat = "identity", width = 10,colour="black",size=0.25,fill="#3BC8EB")+
@@ -25,7 +25,7 @@ ggplot(df,aes(Date,Value))+
          axis.text.x=element_text(size = 11,colour="black"))
 
 #------------------------------------------------------------
-df<-read.csv("PolarArea_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/PolarArea_Data.csv", header = TRUE)
 
 ggplot(df,aes(Date,Value))+
   geom_area(colour="black",size=0.25,fill="#FFA1B9")+

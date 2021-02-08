@@ -2,9 +2,9 @@
 #如有问题修正与深入学习，可联系微信：EasyCharts
 
 library(ggplot2)
-#library(RColorBrewer)
-#library(reshape2)
-df<-read.csv("MappingAnalysis_Data.csv", header = TRUE)
+library(RColorBrewer)
+library(reshape2)
+df<-read.csv("chapter1/data/MappingAnalysis_Data.csv", header = TRUE)
 
 #--------------------------------------Size---------------------------
 ggplot(data=df, aes(x=Time,y=value,group=variable)) + 
