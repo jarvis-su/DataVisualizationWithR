@@ -1,12 +1,8 @@
-
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(ggplot2)       
 library(RColorBrewer)
 
 #---------------------------单数剧系列条形图----------------------------------------------------
-mydata<-read.csv("Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 mydata$Country <- factor(mydata$Country, levels = mydata$Country[order(mydata$Pensions)])
 
@@ -24,7 +20,7 @@ ggplot(data=mydata,aes(Country,Pensions))+
 
 #---------------------------双数剧系列条形图----------------------------------------------------
 library(reshape)
-mydata<-read.csv("Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 mydata<-mydata[,c(1,3,2)]
 mydata$Country <- factor(mydata$Country, levels = mydata$Country[order(mydata$Pensions)])
@@ -45,7 +41,7 @@ ggplot(data=mydata,aes(Country,value,fill=variable))+
 
 
 #-------------------------------堆积条形图-------------------------------------------------------
-mydata<-read.csv("Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 
 rowsum<-sort(rowSums(mydata[,2:ncol(mydata)]),index.return=TRUE)
@@ -67,7 +63,7 @@ ggplot(data=mydata,aes(Country,value,fill=variable))+
   )
 
 #------------------------------百分比堆积柱形图-------------------------------------------------------
-mydata<-read.csv("Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter3/data/Stackedbar_Data.csv",sep=",",na.strings="NA",stringsAsFactors=FALSE)
 
 sum<-sort(rowSums(mydata[,2:ncol(mydata)]),index.return=TRUE)
 

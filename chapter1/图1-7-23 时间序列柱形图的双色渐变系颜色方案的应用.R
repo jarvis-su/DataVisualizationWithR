@@ -1,7 +1,7 @@
 ary(ggplot2)
 library(RColorBrewer)
 
-mydata<-read.csv("Coluchapter1/data/mn_Data.csv",stringsAsFactors=FALSE)
+mydata<-read.csv("chapter1/data/Column_Data.csv",stringsAsFactors=FALSE)
 mydata$Date<-as.Date(mydata$Date)
 
 ggplot(data = mydata, aes(x = Date, y = temperature,fill = temperature)) +
