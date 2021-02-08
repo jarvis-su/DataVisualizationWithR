@@ -1,9 +1,7 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
 
 library(ggplot2)
 
-df<-read.csv("Facet_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/Facet_Data.csv", header = TRUE)
 
 #------------------------------------------------------ÀëÉ¢ÐÍ------------------------------------------
 library(RColorBrewer)

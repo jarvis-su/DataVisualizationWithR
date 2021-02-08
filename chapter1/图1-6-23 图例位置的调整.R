@@ -4,7 +4,7 @@
 library(ggplot2)
 library(RColorBrewer)
 library(reshape2)
-df<-read.csv("MappingAnalysis_Data.csv", header = TRUE)
+df<-read.csv("chapter1/data/MappingAnalysis_Data.csv", header = TRUE)
 
 #--------------------------------------color+shape---------------------------
 ggplot(data=df, aes(x=Time,y=value,fill=variable,shape=variable)) + 

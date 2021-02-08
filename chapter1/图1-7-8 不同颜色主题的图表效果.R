@@ -8,7 +8,7 @@ library(RColorBrewer)
 
 color_theme<-brewer.pal(7,"Set2")[c(1,2,4,5)]
 
-mydata<-read.csv("Boxplot_Data.csv",stringsAsFactors=FALSE) 
+mydata<-read.csv("chapter1/data/Boxplot_Data.csv",stringsAsFactors=FALSE) 
 
 
 ggplot(mydata, aes(Class, Value))+ 

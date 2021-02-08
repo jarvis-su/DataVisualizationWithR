@@ -1,11 +1,7 @@
-
-#EasyCharts团队出品，如有商用必究，
-#如需使用与深入学习，请联系微信：EasyCharts
-
-library(ggplot2)
+ary(ggplot2)
 library(RColorBrewer)
 
-mydata<-read.csv("Column_Data.csv",stringsAsFactors=FALSE)
+mydata<-read.csv("Coluchapter1/data/mn_Data.csv",stringsAsFactors=FALSE)
 mydata$Date<-as.Date(mydata$Date)
 
 ggplot(data = mydata, aes(x = Date, y = temperature,fill = temperature)) +
