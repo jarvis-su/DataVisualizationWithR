@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(dplyr)
 library(ggplot2)
 library(readxl)

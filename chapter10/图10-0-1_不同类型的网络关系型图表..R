@@ -5,7 +5,7 @@ library(igraph)
 library(viridis)
 library(ggplot2)
 library(reshape2)
-df <- read.csv("AdjacencyDirectedWeighted.csv",header=TRUE,stringsAsFactors = FALSE)
+df <- read.csv("chapter10/data/AdjacencyDirectedWeighted.csv",header=TRUE,stringsAsFactors = FALSE)
 df_sum<-apply(df[,2:ncol(df)],2,sum)+apply(df[,2:ncol(df)],1,sum)
 order<-sort(df_sum,index.return=TRUE,decreasing =TRUE)
 
@@ -79,8 +79,8 @@ circos.clear()
 #(d) ½ÚµãÁ´½ÓÍ¼---------------------------------------------------------------------------------------
 library(dplyr)
 # read edges and nodes
-nodes = read.csv("dolphin_nodes.csv")
-edges = read.csv("dolphin_edges.csv")
+nodes = read.csv("chapter10/data/dolphin_nodes.csv")
+edges = read.csv("chapter10/data/dolphin_edges.csv")
 n = nrow(nodes)
 m = nrow(edges)
 
