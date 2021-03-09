@@ -1,13 +1,10 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(ggplot2)
 library(RColorBrewer)
 library(reshape2)
 
 
 #-------------------------图6-1-1 多数据系列图. (a)折线图-------------------------
-mydata<-read.csv("Line_Data.csv",stringsAsFactors=FALSE) 
+mydata<-read.csv("chapter6/data/Line_Data.csv",stringsAsFactors=FALSE) 
 mydata$date<-as.Date(mydata$date)
 
 mydata<-melt(mydata,id="date")
@@ -36,7 +33,7 @@ ggplot(mydata, aes(x =date, y = value,group=variable) )+
 
 
 #--------------------------------------图6-1-2 填充面积折线图. (a)纯色填充-------------------
-mydata<-read.csv("Area_Data.csv",stringsAsFactors=FALSE) 
+mydata<-read.csv("chapter6/data/Area_Data.csv",stringsAsFactors=FALSE) 
 mydata$date<-as.Date(mydata$date)
 ggplot(mydata, aes(x =date, y = value) )+
   geom_area(fill="#FF6B5E",alpha=0.75)+ 
@@ -68,7 +65,7 @@ ggplot(newdata, aes(x =date, y = y) )+ #geom_area(fill="#FF6B5E",alpha=0.75)
 
 #------------------------图6-1-3 夹层填充面积图. (a)单色------------------------------
 
-mydata<-read.csv("Line_Data.csv",stringsAsFactors=FALSE) 
+mydata<-read.csv("chapter6/data/Line_Data.csv",stringsAsFactors=FALSE) 
 mydata$date<-as.Date(mydata$date)
 
 mydata1<-mydata

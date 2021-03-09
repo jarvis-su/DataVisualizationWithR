@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 #reference:http://rpsychologist.com/working-with-shapefiles-projections-and-world-maps-in-ggplot
 
 
@@ -14,7 +10,7 @@ color2<-brewer.pal(9,"Greens")[c(4,6)]
 color<-c(rev(color2),color1)
 
 
-mydata<-read.csv("Country_Data.csv",stringsAsFactors=FALSE) 
+mydata<-read.csv("chapter11/中国地图图表系列/Country_Data.csv",stringsAsFactors=FALSE) 
 names(mydata)[1]<-c("Country" ,"Scale" ,"million","fan"  )
 mydata$million<-mydata$Scale/1000000
 

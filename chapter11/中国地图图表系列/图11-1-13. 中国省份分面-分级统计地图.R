@@ -1,8 +1,3 @@
-
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(rgdal)   #提供readOGR()函数
 library(ggplot2)
 library(dplyr)
@@ -11,7 +6,7 @@ library(RColorBrewer)
 library(Cairo)         #图片高清导出
 library(showtext)
 
-dataProjected <- readOGR("China_adm_shp/bou4_4m/BOUNT_poly.shp") 
+dataProjected <- readOGR("chapter11/中国地图图表系列/China_adm_shp/bou4_4m/BOUNT_poly.shp") 
 dataProjected@data$id <- rownames(dataProjected@data)
 watershedPoints <- fortify(dataProjected)
 df_China4 <- merge(watershedPoints, dataProjected@data, by = "id")
@@ -21,7 +16,7 @@ mydata<-data.frame(NAME99=unique(df_China4$NAME99),
 df_China<-join(df_China4,mydata,type="full") 
 
 
-ProCode <- read.csv("PcCode.csv")
+ProCode <- read.csv("chapter11/中国地图图表系列/PcCode.csv")
 ProCode$ID<-as.character(ProCode$ID)
 
 for (i in 1:nrow(ProCode)){
@@ -48,7 +43,7 @@ df_China<-df_China[df_China$NAME99!='南沙群岛' &
                      df_China$NAME99!='中沙群岛' & 
                      df_China$NAME99!='中沙群岛的岛礁及其海域', ]
 
-cairo_pdf(file="China_Provincemap.pdf",width=8.42,height=7)
+cairo_pdf(file="chapter11/中国地图图表系列/China_Provincemap.pdf",width=8.42,height=7)
 showtext_begin()
 ggplot(df_China, aes(x = long, y = lat,group=group,fill=value)) +
   geom_polygon(colour="black",size=0.1) +

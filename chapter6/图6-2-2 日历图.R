@@ -1,7 +1,4 @@
 
-#EasyCharts团队出品，如有商用必究，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(ggplot2)
 library(data.table) #提供data.table()函数
 library(ggTimeSeries)
