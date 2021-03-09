@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(rgdal)   #提供readOGR()函数
 library(ggplot2)
 library(dplyr)
@@ -10,12 +6,12 @@ library(reshape2)
 library(ggalt)
 
 
-dataProjected <- readOGR("Virtual_Map0.shp")
+dataProjected <- readOGR("chapter11/Virtual_Map0.shp")
 dataProjected@data$id <- rownames(dataProjected@data)
 watershedPoints <- fortify(dataProjected)
 df_map <- full_join(watershedPoints, dataProjected@data, by = "id")
 
-df_huouse<-read.csv("Virtual_huouse.csv")  
+df_huouse<-read.csv("chapter11/Virtual_huouse.csv")  
 set.seed(12345)
 df_huouse<-df_huouse[sample(1:nrow(df_huouse),500),1:3]
 

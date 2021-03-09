@@ -1,8 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
-
 library(ggplot2)       #绘图函数
 library(dplyr)          #数据合并工具
 library(Cairo)         #图片高清导出
@@ -15,7 +10,7 @@ library(rgdal)   #提供readOGR()函数
 
 #--------------------------USA_adm2.shp------------------------------------------------------
 
-dataProjected <- readOGR("USA_adm_shp/USA_adm2.shp")
+dataProjected <- readOGR("chapter11/中国地图图表系列/USA_adm_shp/USA_adm2.shp")
 dataProjected@data$id <- rownames(dataProjected@data)
 watershedPoints <- fortify(dataProjected)
 df_map2 <- full_join(watershedPoints, dataProjected@data, by = "id")
@@ -39,11 +34,11 @@ df_map2<-rbind(df_mainland,df_Hawaii,df_Alaska)
 mydata<-data.frame(NAME_2=unique(df_map2$NAME_2),
                    value=round(runif(length(unique(df_map2$NAME_2)),0,10)))
 
-df_map2<-join(df_map2,mydata,type="full")
+df_map2<-full_join(df_map2,mydata,type="full")
 
 
 #--------------------------USA_adm1.shp------------------------------------------------------
-dataProjected <- readOGR("USA_adm_shp/USA_adm1.shp")
+dataProjected <- readOGR("chapter11/中国地图图表系列/USA_adm_shp/USA_adm1.shp")
 dataProjected@data$id <- rownames(dataProjected@data)
 watershedPoints <- fortify(dataProjected)
 df_map1<- full_join(watershedPoints, dataProjected@data, by = "id")
