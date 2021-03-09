@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(rgdal)   #提供readOGR()函数
 library(ggplot2)
 library(dplyr)
