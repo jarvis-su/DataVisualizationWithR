@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(ggplot2)
 library(RColorBrewer)
 colormap<- rev(brewer.pal(11,'Spectral'))

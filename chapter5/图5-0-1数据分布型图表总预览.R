@@ -1,13 +1,10 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 #Reference：https://github.com/hadley/boxplots-paper
 
 # #--------------------------------------------------数据的准备与导入------------------------------------------------------------------
 library(RColorBrewer)
 library(ggplot2)
 
-mydata<-read.csv("Norm.csv",stringsAsFactors=FALSE,header=TRUE) #以3为均值，1为标准差的正态分布
+mydata<-read.csv("chapter5/data/Norm.csv",stringsAsFactors=FALSE,header=TRUE) #以3为均值，1为标准差的正态分布
 
 mydata$Class<-rep("Class",nrow(mydata))
 colnames(mydata)<-c("Value","Class")

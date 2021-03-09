@@ -3,7 +3,7 @@
 
 library(ggplot2)  
 
-df<-read.csv("Hist_Density_Data.csv",stringsAsFactors=FALSE) 
+df<-read.csv("chapter5/data/Hist_Density_Data.csv",stringsAsFactors=FALSE) 
 
 #--------------------------------------------(a2) 多数剧系列直方图-----------------------------------
 
