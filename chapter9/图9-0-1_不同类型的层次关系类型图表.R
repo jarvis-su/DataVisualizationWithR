@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 #Referre: ggraph教程
 #http://users.dimi.uniud.it/~massimo.franceschet/ns/syllabus/make/ggraph/ggraph.html
 #https://www.data-imaginist.com/2017/ggraph-introduction-layouts/

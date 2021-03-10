@@ -1,8 +1,3 @@
-
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 #reference：
 #http://www.hiveplot.net/
 #https://www.data-imaginist.com/tags/ggraph/

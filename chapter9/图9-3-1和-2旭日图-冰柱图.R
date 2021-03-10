@@ -1,13 +1,9 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(ggraph)
 library(igraph)
 library(RColorBrewer) 
 library(dplyr)
 
-df<-read.csv('旭日图.csv',header=TRUE,stringsAsFactors=FALSE)
+df<-read.csv('chapter9/data/旭日图.csv',header=TRUE,stringsAsFactors=FALSE)
 
 #--------------------------------分割角度均等平分----------------------------------------
 edges<- data.frame(rbind(

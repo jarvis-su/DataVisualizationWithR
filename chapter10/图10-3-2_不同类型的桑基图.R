@@ -1,14 +1,9 @@
-
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(ggalluvial)
 library(ggplot2)
 library(viridis)
 library(RColorBrewer)
 library(reshape2)
-df <- read.csv("AdjacencyDirectedWeighted.csv", header=TRUE,stringsAsFactors = FALSE,check.names = FALSE)
+df <- read.csv("chapter10/data/AdjacencyDirectedWeighted.csv", header=TRUE,stringsAsFactors = FALSE,check.names = FALSE)
 
 df_melt<-melt(df,id.vars = 'Region')
 colnames(df_melt)<-c('from','to','weight')

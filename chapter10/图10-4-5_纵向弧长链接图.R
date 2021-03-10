@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 library(tidyverse)
 library(circlize)
 library(viridis)
@@ -12,7 +8,7 @@ library(ggplot2)
 library(reshape2)
 library(wesanderson)
 
-dataUU <-read.csv("AdjacencyUndirectedUnweighted.csv",header=TRUE,check.names = FALSE)
+dataUU <-read.csv("chapter10/data/AdjacencyUndirectedUnweighted.csv",header=TRUE,check.names = FALSE)
 
 # Transform the adjacency matrix in a long format
 connect <- dataUU %>%

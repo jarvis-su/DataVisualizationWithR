@@ -1,7 +1,3 @@
-
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 #Referre: https://jokergoo.github.io/circlize_book/book/graphics.html#links
 
 library(circlize)
