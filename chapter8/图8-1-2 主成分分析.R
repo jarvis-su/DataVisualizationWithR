@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 #-----------------------------------------------------------Method 1-----------------------------------------------------------
 library(ggplot2)
 library(factoextra)
@@ -29,7 +26,7 @@ fviz_pca_ind(iris.pca,
 set.seed(1)
 num_rows_sample <- 5000
 
-train        <- read.csv("Tsne_Data.csv")
+train        <- read.csv("chapter8/data/Tsne_Data.csv")
 train_sample <- train[sample(1:nrow(train), size = num_rows_sample),]
 features     <- train_sample[,c(-1, -95)]
 features.pca<- PCA(features, graph = FALSE)

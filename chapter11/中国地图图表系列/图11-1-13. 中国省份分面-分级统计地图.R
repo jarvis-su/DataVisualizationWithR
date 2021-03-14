@@ -13,7 +13,7 @@ df_China4 <- merge(watershedPoints, dataProjected@data, by = "id")
 df_China4$province<-substr(as.character(df_China4$ADCODE99),1,2)
 mydata<-data.frame(NAME99=unique(df_China4$NAME99),
                    value=round(runif(length(unique(df_China4$NAME99)),0,10)))
-df_China<-join(df_China4,mydata,type="full") 
+df_China<-full_join(df_China4,mydata,type="full") 
 
 
 ProCode <- read.csv("chapter11/中国地图图表系列/PcCode.csv")

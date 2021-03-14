@@ -29,7 +29,7 @@ ggplot(data=mydata,aes(t_DistributedY1,t_DistributedY2,fill=Group))+
 set.seed(1)
 num_rows_sample <- 5000
 
-train        <- read.csv("Tsne_Data.csv")
+train        <- read.csv("chapter8/data/Tsne_Data.csv")
 train_sample <- train[sample(1:nrow(train), size = num_rows_sample),]
 features     <- train_sample[,c(-1, -95)]
 

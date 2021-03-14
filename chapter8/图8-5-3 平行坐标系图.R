@@ -1,9 +1,6 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(GGally)
 
-dlarge <-read.csv("Parallel_Coordinates_Data.csv", header=TRUE,check.names=FALSE)
+dlarge <-read.csv("chapter8/data/Parallel_Coordinates_Data.csv", header=TRUE,check.names=FALSE)
 
 
 dlarge<-transform(dlarge, Class=ifelse(reading> 523, "Class1", "Class2"))

@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 #------------------------------------图 7-7-3 星形图-----------------------------
 library(graphics)
 library(RColorBrewer)
