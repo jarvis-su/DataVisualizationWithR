@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 library(aplpack)
 library(RColorBrewer)
 crime <- read.csv("Faces_Data.csv")

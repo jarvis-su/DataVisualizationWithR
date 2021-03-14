@@ -1,7 +1,4 @@
 
-#EasyCharts团队出品，
-#如需使用与深入学习，请联系微信：EasyCharts
-
 #Reference: https://rpubs.com/rushgeo/flowcharts1
 
 library(ggraph)

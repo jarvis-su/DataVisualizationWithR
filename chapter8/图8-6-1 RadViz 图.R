@@ -1,6 +1,3 @@
-#EasyCharts团队出品，
-#如有问题修正与深入学习，可联系微信：EasyCharts
-
 #Reference: https://cran.r-project.org/web/packages/Radviz/vignettes/single_cell_projections.html
 
 #--------------------------图7-6-1 Radviz图 (b)多数据系列----------------------------------
